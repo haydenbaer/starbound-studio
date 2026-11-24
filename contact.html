@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Prepare feedback for Starbound Studio and review the website privacy information.">
+  <title>Contact - Starbound Studio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header>
+    <a class="site-name" href="index.html"><img class="logo" src="assets/starbound-studio-logo.png" alt="Starbound Studio home" width="1699" height="955"></a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="games.html">Games</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </header>
+  <main id="main" tabindex="-1">
+    <h1>Contact and Feedback</h1>
+    <p>You can use this form to prepare a feedback message. It shows a message preview below the form; it does not send a message to me.</p>
+    <form id="feedback-form" novalidate>
+      <label for="name">Your name</label>
+      <input id="name" name="name" type="text" autocomplete="name" maxlength="80" required aria-describedby="name-error">
+      <span id="name-error" class="error"></span>
+      <label for="topic">Topic</label>
+      <select id="topic" name="topic">
+        <option>Website feedback</option><option>WARPED</option><option>The Anomaly</option>
+      </select>
+      <label for="message">Your message</label>
+      <textarea id="message" name="message" rows="6" maxlength="3000" required aria-describedby="message-error"></textarea>
+      <span id="message-error" class="error"></span>
+      <button type="submit">Preview message</button>
+      <p id="form-status" role="status"></p>
+      <pre id="message-preview"></pre>
+      <noscript><p>This form needs JavaScript to show the preview.</p></noscript>
+    </form>
+    <h2>Privacy</h2>
+    <p>This website does not use analytics or advertising cookies. The form processes your text in your browser and does not send it to a server. Steam and GitHub have their own privacy policies.</p>
+    <p><a href="https://github.com/haydenbaer">Visit my GitHub profile</a></p>
+  </main>
+  <footer>
+    <p>Starbound Studio | Hayden Baer</p>
+    <p><a href="https://store.steampowered.com/app/4841370/WARPED/">WARPED on Steam</a> |
+      <a href="https://github.com/haydenbaer">My GitHub</a> |
+      <a href="contact.html">Contact and privacy</a></p>
+  </footer>
+</body>
+</html>
